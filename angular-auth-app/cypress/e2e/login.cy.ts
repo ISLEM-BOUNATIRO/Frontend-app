@@ -16,7 +16,6 @@ describe('Login page', () => {
     cy.get('input[name=email]').type('wrong@example.com');
     cy.get('input[name=password]').type('wrongpass');
     cy.get('button[type=submit]').click();
-
     cy.contains('Invalid credentials').should('be.visible');
   });
 });

@@ -41,6 +41,6 @@ describe('Auth Component (Jest)', () => {
 
     component.onLogin();
 
-    expect(component.error).toBe('Email ou mot de passe invalide');
+    expect(component.error).toBe('Invalid credentials');
   });
 });
